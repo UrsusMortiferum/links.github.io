@@ -1,0 +1,218 @@
+<html>
+
+<head>
+  <style media="screen">
+    #Input {
+      background-image: url('/css/searchicon.png');
+      /* Add a search icon to input */
+      background-position: 10px 12px;
+      /* Position the search icon */
+      background-repeat: no-repeat;
+      /* Do not repeat the icon image */
+      width: 100%;
+      /* Full-width */
+      font-size: 16px;
+      /* Increase font-size */
+      padding: 12px 20px 12px 40px;
+      /* Add some padding */
+      border: 1px solid #ddd;
+      /* Add a grey border */
+      margin-bottom: 12px;
+      /* Add some space below the input */
+    }
+
+    #Table {
+      border-collapse: collapse;
+      /* Collapse borders */
+      width: 100%;
+      /* Full-width */
+      border: 1px solid #ddd;
+      /* Add a grey border */
+      font-size: 18px;
+      /* Increase font-size */
+    }
+
+    #Table th,
+    #Table td {
+      text-align: center;
+      /* Left-align text */
+      padding: 12px;
+      /* Add padding */
+    }
+
+    #Table tr {
+      /* Add a bottom border to all table rows */
+      border-bottom: 1px solid #ddd;
+    }
+
+    #Table tr.header,
+    #Table tr:hover {
+      /* Add a grey background color to the table header and on hover */
+      background-color: #f1f1f1;
+    }
+  </style>
+  <script type="text/javascript">
+    function myFunction() {
+      // Declare variables
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("Input");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("Table");
+      tr = table.getElementsByTagName("tr");
+
+      // Loop through all table rows, and hide those who don't match the search query
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Basic_Sys</title>
+</head>
+
+<body>
+  <input type="text" id="Input" name="Search" onkeyup="myFunction()" placeholder="Who would win in a fight between a taco and a grilled cheese?">
+
+  <table id="Table">
+    <tr class="header">
+      <th style="width:60%;">Website</th>
+      <th style="width:40%;">Env.</th>
+    </tr>
+    <tr>
+      <td><a href="https://dcearcevrdr27.ger.win.int.kn/EnterpriseVault/search/shell.aspx#">EnterpriseVault</a></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><a href="https://tetame.corp.int.kn/Core/Account/Login?ReturnUrl=%2F">tetame</a></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><a href="https://analytics.kuehne-nagel.com/">Tableau</a></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.taskade.com/">Taskade</a></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><a href="http://plsnipeit.corp.int.kn/account/view-assets">Snipe-IT</a></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><a href="https://gpm-kn4pl-live.portrix-ls.de/login.jsp">Portrix</a></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><a href="https://mail.emea.kuehne-nagel.com/owa/?bFS=1#path=/mail">OWA</a></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><a href="https://learning.int.kn/">Learning</a></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><a href="https://kn.leanix.net/knapm/dashboard/cd648b27-93d3-4918-b0c5-b82b1d55542e">LeanIX</a></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><a href="https://kndocs.int.kn/webcube/?">KN Documents</a></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><a href="https://web.lfs-upload.aws.kuehne-nagel.cloud/">KN Cloud File Server</a></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><a href="https://test-jira.int.kn/secure/Dashboard.jspa">Jira</a></td>
+      <td>TEST</td>
+    </tr>
+    <tr>
+      <td><a href="https://jira.int.kn/secure/Dashboard.jspa">Jira</a></td>
+      <td>PROD</td>
+    </tr>
+    <tr>
+      <td><a href="http://ib-ticket.int.kn/">IB RT</a></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><a href="https://ticket.int.kn/">Global RT</a></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><a href="https://globalorgview.int.kn/">globalorgview</a></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><a href="https://things.int.kn/">Things</a></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><a href="https://mdm12.emea.kuehne-nagel.com/MyDevice/Landing/#/MyDevice/Device/List">Devices?</a></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><a href="https://kuehne-nagel.condecosoftware.com/Master.aspx">condecosoftware</a></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><a href="https://kuehne-nagel.app.box.com/">Box</a></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><a href="https://intra-bi-cluster.int.kn/BOE/BI">BI - Intra</a></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><a href="https://bi.kuehne-nagel.com/BOE/BI">BI</a></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><a href="#http://usngksl1034otm.us.int.kn:7778/">IL3</a></td>
+      <td>DEV</td>
+    </tr>
+    <tr>
+      <td><a href="https://otmil3-prod.amer.kuehne-nagel.com/">IL3</a></td>
+      <td>PROD</td>
+    </tr>
+    <tr>
+      <td><a href="https://otmil3-test.amer.kuehne-nagel.com/">IL3</a></td>
+      <td>TEST</td>
+    </tr>
+    <tr>
+      <td><a href="http://usngksl1010otm.us.int.kn:7778/">IL4</a></td>
+      <td>DEV</td>
+    </tr>
+    <tr>
+      <td><a href="https://otmil4-prod.amer.kuehne-nagel.com/">IL4</a></td>
+      <td>PROD</td>
+    </tr>
+    <tr>
+      <td><a href="https://otmil4-test.amer.kuehne-nagel.com/">IL4</a></td>
+      <td>TEST</td>
+    </tr>
+    <tr>
+      <td><a href="http://usngksl378otm.us.int.kn:7778/">IL5</a></td>
+      <td>DEV</td>
+    </tr>
+    <tr>
+      <td><a href="https://otmil5-prod.amer.kuehne-nagel.com/">IL5</a></td>
+      <td>PROD</td>
+    </tr>
+    <tr>
+      <td><a href="https://otmil5-test.amer.kuehne-nagel.com/">IL5</a></td>
+      <td>TEST</td>
+    </tr>
+  </table>
+</body>
+
+</html>
